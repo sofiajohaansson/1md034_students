@@ -1,10 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>DELI-VERY</title>
+
+        <!-- http://localhost:3000/ -->
+
+        <title>Burger Dreams</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="\css\style.css">
     </head>
     <body>
-        <h1>Hello World!!!</h1>
-        <a href="/map" target="_blank">Open map in new window</a>.
+      <main>
+
+        <section class="header" align="center">
+          <img id="background" src="\img\wood.jpg" alt="header" title="header">
+          <h1 id="headline" align="center">Välkommen till Burger Dreams</h1>
+        </section>
+
+
+        <section class="burgers">
+          <h2 align="center">Våra burgare</h2>
+          <p align="center">Våra burgare görs på svenskt hängmörat gårdskött från Hälsingestintan och serveras i dagsfärskt ekologiskt bröd från vårt egna bageri.</p>
+
+          <div class="wrapper" align="center">
+             <div class="box a"><h3>Fina fisken</h3></div>
+             <div class="box b"><h3>Veggie Halloumi</h3></div>
+             <div class="box c"><h3>BBQ dröm</h3></div>
+             <div class="box b1"><img src="\img\b1.jpg" alt="burger1" title="b1" width="350"></div>
+             <div class="box b2"><img src="\img\b2.jpg" alt="burger2" title="b2" width="350"></div>
+             <div class="box b3"><img src="\img\b3.jpg" alt="burger3" title="b3" width="350"></div>
+             <div class="box desc1" align="left">
+               <ul>
+                 <li>Grillad torsk</li>
+                 <li>Picklad gurka, ruccula och senapsdressing</li>
+                 <li>Hembakat grahamsbröd (<span id="allergi">gluten</span>)</li>
+               </ul>
+             </div>
+             <div class="box desc2" align="left">
+               <ul>
+                 <li> Grönsaksburgare </li>
+                 <li> Halloumi, tomat, spenat och salsa (<span id="allergi">laktos</span>)</li>
+                 <li> Dinkelbröd (<span id="allergi">gluten</span>)</li>
+               </ul>
+             </div>
+             <div class="box desc3" align="left">
+               <ul>
+                 <li> 120g hängmörat gårdskött från Uppland </li>
+                 <li> Två lager endamer, tomat, isbergssallad och dressing (<span id="allergi">laktos, ägg</span>)</li>
+                 <li> Nybakat hamburgerbröd (<span id="allergi">gluten</span>)</li>
+               </ul>
+             </div>
+           </div>
+
+        <span id="personuppgifter">
+          <section class="personuppgifter" align="center">
+            <h2>Personuppgifter</h2>
+            <p>
+              <label for="firstname">Förnamn</label><br>
+              <input type="text" id="förnamn" name="fn" required="required">
+            </p>
+            <p>
+              <label for="Efternamn">Efternamn</label><br>
+              <input type="text" id="Efternamn" name="en" required="required">
+            </p>
+            <p>
+              <label for="E-mail address">E-mail</label><br>
+              <input type="email" id="email" name="em" required="required">
+            </p>
+            <p>
+              <label for="Gatuadress">Gatuadress</label><br>
+              <input type="text" id="gata" name="ga" required="required">
+            </p>
+            <p>
+              <label for="Husnummer">Husnummer</label><br>
+              <input type="number" id="nummer" name="hn" required="required">
+            </p>
+            <p>
+              <label for="Betalning">Betalningsmetod</label><br>
+              <select id="betalning" name="betalning" required="required">
+                <option>Kort</option>
+                <option>Faktura</option>
+                <option>Avbetalning</option>
+              </select>
+            </p>
+            <!-- Radio buttons -->
+            <p>
+              <label for="Kön">Kön</label><br>
+              <input type="radio" id="kön" name="kön"> Kvinna <br>
+              <input type="radio" id="kön" name="kön"> Man <br>
+              <input type="radio" id="kön" name="kön"> Annat <br>
+              <input type="radio" id="kön" name="kön"> Hoppa över <br>
+            </p>
+
+
+          </section>
+        </span>
+
+        <button type="submit"><img src="\img\delivery1.png" width="30"> Beställ </button>
+
+      </main>
+      <footer>Copyrigt och sånt</footer>
     </body>
 </html>
